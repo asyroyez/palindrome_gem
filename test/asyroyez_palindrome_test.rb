@@ -25,4 +25,7 @@ class AsyroyezPalindromeTest < Minitest::Test
     refute 12345.palindrome?
   end
 
+  def test_blank_non_palindrome
+    refute " ".palindrome?
+  end
 end

@@ -3,7 +3,8 @@ require "asyroyez_palindrome/version"
 module AsyroyezPalindrome
   # Returns true for a palindrome, false otherwise.
   def palindrome?
-    processed_content == processed_content.reverse
+    !processed_content.empty? &&
+      processed_content == processed_content.reverse
   end
 
   private
